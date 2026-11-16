@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meri Kahani, Meri Zubani — stories of women who run the bazaar</title>
+<meta name="description" content="Meri Kahani, Meri Zubani (my story, in my own words) shares the stories of women micro-entrepreneurs from Sanquelim, Keri and Surla in Goa, with a help desk on loans and government schemes.">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='6' fill='%231E5B3C'/%3E%3Ctext x='24' y='34' font-size='28' text-anchor='middle' fill='%23F1C232' font-family='Georgia'%3Eक%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+
+<header class="mast">
+  <div class="board">
+    <span class="ms">M/S.</span>
+    <h1><a href="#home"><span class="nb">Meri Kahani,</span> <span class="nb">Meri Zubani</span></a></h1>
+    <span class="deva" lang="hi">मेरी कहानी, मेरी ज़ुबानी</span>
+    <div class="addr">Stories of women who run the bazaar<span>New Market, Sanquelim, Goa</span></div>
+  </div>
+  <div class="toran" aria-hidden="true"></div>
+  <button class="btn small plain menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <a href="#home" data-r="home">Home</a>
+  <a href="#stories" data-r="stories">Stories</a>
+  <a href="#women" data-r="women">The six</a>
+  <a href="#faq" data-r="faq">Help desk</a>
+  <a href="#share" data-r="share">Share your story</a>
+  <a href="#about" data-r="about">About</a>
+  <span class="spacer"></span>
+  <a href="#account" data-r="account" id="accLink">Sign in</a>
+</nav>
+<div class="navline"></div>
+
+<main id="view" tabindex="-1"></main>
+
+<footer>
+  <span>Meri Kahani, Meri Zubani is a student project for ET Rural Marketing (Bottom of the Pyramid). Field stories come from interviews by Sneha, Ravi and Parth.</span>
+  <span>Scheme details checked November 2026. Confirm at your bank or the scheme office before you apply. <span id="dataNote"></span></span>
+</footer>
+
+<!-- Sakhi help bot -->
+<button class="bot-fab" id="botFab" aria-controls="bot" aria-expanded="false">
+  <span class="face" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 48 48" fill="none" stroke="#2B1B10" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="24" r="17"/><circle cx="18" cy="21" r="1.8" fill="#2B1B10"/><circle cx="30" cy="21" r="1.8" fill="#2B1B10"/><path d="M17 29c4 4 10 4 14 0"/><circle cx="24" cy="12" r="2.2" fill="#B3261E" stroke="none"/></svg></span>
+  <span class="txt">Ask Sakhi</span>
+</button>
+<section class="win bot" id="bot" hidden aria-label="Sakhi help bot">
+  <div class="win-bar red" id="botBar"><h3>Sakhi, your help desk</h3><button id="botClose" aria-label="Close Sakhi">&times;</button></div>
+  <div class="bot-log" id="botLog" aria-live="polite"></div>
+  <div class="bot-sugg" id="botSugg"></div>
+  <form id="botForm" autocomplete="off">
+    <label class="sr-only" for="botIn">Ask a question</label>
+    <input id="botIn" type="text" placeholder="Ask about loans, schemes, SHGs…">
+    <button class="btn small green" type="submit">Ask</button>
+  </form>
+</section>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bot.js"></script>
+</body>
+</html>
